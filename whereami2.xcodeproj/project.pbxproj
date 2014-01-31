@@ -21,6 +21,9 @@
 		9171851118995114005062AF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917184F318995114005062AF /* UIKit.framework */; };
 		9171851918995114005062AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9171851718995114005062AF /* InfoPlist.strings */; };
 		9171851B18995114005062AF /* whereami2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9171851A18995114005062AF /* whereami2Tests.m */; };
+		917185251899512E005062AF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917185241899512E005062AF /* CoreLocation.framework */; };
+		9171852718995408005062AF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9171852618995408005062AF /* MapKit.framework */; };
+		9171852A1899BE85005062AF /* BNRMapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 917185291899BE85005062AF /* BNRMapPoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		9171851618995114005062AF /* whereami2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "whereami2Tests-Info.plist"; sourceTree = "<group>"; };
 		9171851818995114005062AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9171851A18995114005062AF /* whereami2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = whereami2Tests.m; sourceTree = "<group>"; };
+		917185241899512E005062AF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9171852618995408005062AF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		917185281899BE85005062AF /* BNRMapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRMapPoint.h; sourceTree = "<group>"; };
+		917185291899BE85005062AF /* BNRMapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRMapPoint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9171852718995408005062AF /* MapKit.framework in Frameworks */,
+				917185251899512E005062AF /* CoreLocation.framework in Frameworks */,
 				917184F218995114005062AF /* CoreGraphics.framework in Frameworks */,
 				917184F418995114005062AF /* UIKit.framework in Frameworks */,
 				917184F018995114005062AF /* Foundation.framework in Frameworks */,
@@ -101,6 +110,8 @@
 		917184EE18995114005062AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9171852618995408005062AF /* MapKit.framework */,
+				917185241899512E005062AF /* CoreLocation.framework */,
 				917184EF18995114005062AF /* Foundation.framework */,
 				917184F118995114005062AF /* CoreGraphics.framework */,
 				917184F318995114005062AF /* UIKit.framework */,
@@ -117,6 +128,8 @@
 				9171850118995114005062AF /* Main.storyboard */,
 				9171850418995114005062AF /* WhereamiViewController.h */,
 				9171850518995114005062AF /* WhereamiViewController.m */,
+				917185281899BE85005062AF /* BNRMapPoint.h */,
+				917185291899BE85005062AF /* BNRMapPoint.m */,
 				9171850718995114005062AF /* Images.xcassets */,
 				917184F618995114005062AF /* Supporting Files */,
 			);
@@ -252,6 +265,7 @@
 			files = (
 				9171850018995114005062AF /* WhereamiAppDelegate.m in Sources */,
 				917184FC18995114005062AF /* main.m in Sources */,
+				9171852A1899BE85005062AF /* BNRMapPoint.m in Sources */,
 				9171850618995114005062AF /* WhereamiViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +475,7 @@
 				9171852018995114005062AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9171852118995114005062AF /* Build configuration list for PBXNativeTarget "whereami2Tests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +484,7 @@
 				9171852318995114005062AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
